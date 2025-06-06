@@ -12,6 +12,7 @@
   --primary: #2f27ce;
   --secondary: #dddbff;
   --accent: #443dff;
+  --padding: 15px 25px;
 }
 
 :root[data-theme="dark"] {
@@ -23,5 +24,57 @@
 }
 
 body {
+  background: var(--text);
   font-family: "Noto Sans", sans-serif;
+  text-align: center;
+  width: 600px;
+  height: 300px;
+}
+
+ul {
+  list-style: none;
+}
+
+.title {
+  padding: var(--padding);
+  background: var(--background);
+}
+
+.card {
+  background: var(--background);
+  padding: var(--padding);
+}
+
+.card__categories {
+  display: flex;
+  justify-content: center;
+}
+
+.card__categories__btn{
+
+}
+
+footer {
+  height: 100px;
+  width: 600px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--background);
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* utility classes */
+.margin {
+  margin: 0 auto;
+}
+.txt-align {
+  text-align: center;
+}
+.border {
+  border: 2px solid black;
 }
