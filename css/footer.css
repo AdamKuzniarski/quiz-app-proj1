@@ -10,4 +10,5 @@ footer {
   gap: 45px;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }

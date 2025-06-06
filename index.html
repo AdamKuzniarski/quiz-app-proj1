@@ -13,40 +13,51 @@
     <title>Quiz App HTML/CSS/JavaScript</title>
   </head>
   <body>
-    <div class="container margin border">
+    <div class="container border">
       <header>
-        <div class="dark-mode">
-          <svg
-            class="hide"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-toggle-left-icon lucide-toggle-left"
+        <div>
+          <button
+            class="icon-button dark-mode"
+            id="toggle"
+            aria-label="Dark Mode"
           >
-            <circle cx="9" cy="12" r="3" />
-            <rect width="20" height="14" x="2" y="5" rx="7" />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-toggle-right-icon lucide-toggle-right"
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-toggle-left-icon lucide-toggle-left"
+            >
+              <circle cx="9" cy="12" r="3" />
+              <rect width="20" height="14" x="2" y="5" rx="7" />
+            </svg>
+          </button>
+          <button
+            class="icon-button dark-mode hide"
+            id="toggle"
+            aria-label="Dark Mode"
           >
-            <circle cx="15" cy="12" r="3" />
-            <rect width="20" height="14" x="2" y="5" rx="7" />
-          </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-toggle-right-icon lucide-toggle-right"
+            >
+              <circle cx="15" cy="12" r="3" />
+              <rect width="20" height="14" x="2" y="5" rx="7" />
+            </svg>
+          </button>
         </div>
         <div class="header__container">
           <h1 class="title margin border">Quiz App</h1>
@@ -54,61 +65,25 @@
       </header>
       <main>
         <div class="card margin border">
-          <svg
-            class="bookmark hide"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-bookmark-check-icon lucide-bookmark-check"
-          >
-            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z" />
-            <path d="m9 10 2 2 4-4" />
-          </svg>
-          <svg
-            class="bookmark"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-bookmark-icon lucide-bookmark"
-          >
-            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
-          </svg>
-          <h2 class="card__question">Question Placeholder</h2>
-          <div class="card__answer border">
-            <button class="card__answer_btn btn--style">Show Answer!</button>
-          </div>
-          <div>
-            <ul class="card__categories">
-              <li>
-                <button class="card__categories_btn btn--style mark">
-                  html
-                </button>
-              </li>
-              <li>
-                <button class="card__categories_btn btn--style">css</button>
-              </li>
-              <li>
-                <button class="card__categories_btn btn--style">flex</button>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="card margin border">
-          <button class="bookmark">
+          <button class="icon-button bookmark">
             <svg
-              class="bookmark"
+              class="bookmark icon-button"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-bookmark-icon lucide-bookmark"
+            >
+              <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+            </svg>
+          </button>
+          <button class="icon-button bookmark hide">
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -124,25 +99,129 @@
               <path d="m9 10 2 2 4-4" />
             </svg>
           </button>
-
-          <svg
-            class="bookmark hide"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-bookmark-icon lucide-bookmark"
-          >
-            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
-          </svg>
-          <h2 class="card__question">Question Placeholder</h2>
+          <h2 class="card__question">What does CSS stand for?</h2>
           <div class="card__answer border">
             <button class="card__answer_btn btn--style">Show Answer!</button>
+            <h2 class="hide">Cascading Style Sheets</h2>
+          </div>
+          <div>
+            <ul class="card__categories">
+              <li>
+                <button class="card__categories_btn btn--style">html</button>
+              </li>
+              <li>
+                <button class="card__categories_btn btn--style ">
+                  css
+                </button>
+              </li>
+              <li>
+                <button class="card__categories_btn btn--style">flex</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card margin border">
+          <button class="icon-button bookmark hide">
+            <svg
+              class="bookmark icon-button lucide lucide-bookmark-icon lucide-bookmark"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+            </svg>
+          </button>
+          <button class="icon-button bookmark">
+            <svg
+              class="bookmark icon-button lucide lucide-bookmark-icon lucide-bookmark"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z" />
+              <path d="m9 10 2 2 4-4" />
+            </svg>
+          </button>
+          <h2 class="card__question">
+            Which HTML tag is used to link an external CSS file to an HTML
+            document?
+          </h2>
+          <div class="card__answer border">
+            <button class="card__answer_btn btn--style">Show Answer!</button>
+            <h2 class="hide">&lt;link&gt;</h2>
+          </div>
+          <div>
+            <ul class="card__categories">
+              <li>
+                <button class="card__categories_btn btn--style">
+                  html
+                </button>
+              </li>
+              <li>
+                <button class="card__categories_btn btn--style">css</button>
+              </li>
+              <li>
+                <button class="card__categories_btn btn--style">flex</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card margin border">
+          <button class="icon-button bookmark">
+            <svg
+              class="bookmark icon-button"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-bookmark-icon lucide-bookmark"
+            >
+              <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+            </svg>
+          </button>
+          <button class="icon-button bookmark hide">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-bookmark-check-icon lucide-bookmark-check"
+            >
+              <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z" />
+              <path d="m9 10 2 2 4-4" />
+            </svg>
+          </button>
+          <h2 class="card__question">
+            What is the purpose of the HTML&lt; div&gt; element?
+          </h2>
+          <div class="card__answer border">
+            <button class="card__answer_btn btn--style">Show Answer!</button>
+            <h2 class="hide">
+              It is a container element used to <br />
+              group and style content together.
+            </h2>
           </div>
           <div>
             <ul class="card__categories">
@@ -161,40 +240,218 @@
           </div>
         </div>
         <div class="card margin border">
-          <svg
-            class="bookmark hide"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-bookmark-check-icon lucide-bookmark-check"
-          >
-            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z" />
-            <path d="m9 10 2 2 4-4" />
-          </svg>
-          <svg
-            class="bookmark"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-bookmark-icon lucide-bookmark"
-          >
-            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
-          </svg>
-          <h2 class="card__question">Question Placeholder</h2>
+          <button class="icon-button bookmark">
+            <svg
+              class="bookmark icon-button"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-bookmark-icon lucide-bookmark"
+            >
+              <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+            </svg>
+          </button>
+          <button class="icon-button bookmark hide">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-bookmark-check-icon lucide-bookmark-check"
+            >
+              <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z" />
+              <path d="m9 10 2 2 4-4" />
+            </svg>
+          </button>
+          <h2 class="card__question">
+            Which CSS property is used to change the text color of an element?
+          </h2>
           <div class="card__answer border">
             <button class="card__answer_btn btn--style">Show Answer!</button>
+            <h2 class="hide">color</h2>
+          </div>
+          <div>
+            <ul class="card__categories">
+              <li>
+                <button class="card__categories_btn btn--style">html</button>
+              </li>
+              <li>
+                <button class="card__categories_btn btn--style mark">
+                  css
+                </button>
+              </li>
+              <li>
+                <button class="card__categories_btn btn--style">flex</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card margin border">
+          <button class="icon-button bookmark">
+            <svg
+              class="bookmark icon-button"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-bookmark-icon lucide-bookmark"
+            >
+              <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+            </svg>
+          </button>
+          <button class="icon-button bookmark hide">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-bookmark-check-icon lucide-bookmark-check"
+            >
+              <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z" />
+              <path d="m9 10 2 2 4-4" />
+            </svg>
+          </button>
+          <h2 class="card__question">
+            What is the default display property for most HTML elements?
+          </h2>
+          <div class="card__answer border">
+            <button class="card__answer_btn btn--style">Show Answer!</button>
+            <h2 class="hide">block</h2>
+          </div>
+          <div>
+            <ul class="card__categories">
+              <li>
+                <button class="card__categories_btn btn--style">html</button>
+              </li>
+              <li>
+                <button class="card__categories_btn btn--style mark">
+                  css
+                </button>
+              </li>
+              <li>
+                <button class="card__categories_btn btn--style">flex</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card margin border">
+          <button class="icon-button bookmark">
+            <svg
+              class="bookmark icon-button"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-bookmark-icon lucide-bookmark"
+            >
+              <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+            </svg>
+          </button>
+          <button class="icon-button bookmark hide">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-bookmark-check-icon lucide-bookmark-check"
+            >
+              <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z" />
+              <path d="m9 10 2 2 4-4" />
+            </svg>
+          </button>
+          <h2 class="card__question">
+            How can you center an element horizontally in CSS?
+          </h2>
+          <div class="card__answer border">
+            <button class="card__answer_btn btn--style">Show Answer!</button>
+            <h2 class="hide">By setting its margin property to auto</h2>
+          </div>
+          <div>
+            <ul class="card__categories">
+              <li>
+                <button class="card__categories_btn btn--style">html</button>
+              </li>
+              <li>
+                <button class="card__categories_btn btn--style mark">
+                  css
+                </button>
+              </li>
+              <li>
+                <button class="card__categories_btn btn--style">flex</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card margin border">
+          <button class="icon-button bookmark">
+            <svg
+              class="bookmark icon-button"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-bookmark-icon lucide-bookmark"
+            >
+              <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+            </svg>
+          </button>
+          <button class="icon-button bookmark hide">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-bookmark-check-icon lucide-bookmark-check"
+            >
+              <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z" />
+              <path d="m9 10 2 2 4-4" />
+            </svg>
+          </button>
+          <h2 class="card__question">What is the CSS pseudo-class used to select the first child of an element?</h2>
+          <div class="card__answer border">
+            <button class="card__answer_btn btn--style">Show Answer!</button>
+            <h2 class="hide">:first-child</h2>
           </div>
           <div>
             <ul class="card__categories">
@@ -213,40 +470,44 @@
           </div>
         </div>
         <div class="card margin border">
-          <svg
-            class="bookmark hide"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-bookmark-check-icon lucide-bookmark-check"
-          >
-            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z" />
-            <path d="m9 10 2 2 4-4" />
-          </svg>
-          <svg
-            class="bookmark"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-bookmark-icon lucide-bookmark"
-          >
-            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
-          </svg>
-          <h2 class="card__question">Question Placeholder</h2>
+          <button class="icon-button bookmark">
+            <svg
+              class="bookmark icon-button"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-bookmark-icon lucide-bookmark"
+            >
+              <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+            </svg>
+          </button>
+          <button class="icon-button bookmark hide">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-bookmark-check-icon lucide-bookmark-check"
+            >
+              <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z" />
+              <path d="m9 10 2 2 4-4" />
+            </svg>
+          </button>
+          <h2 class="card__question">Which HTML tag is used to create an ordered (numbered) list?</h2>
           <div class="card__answer border">
             <button class="card__answer_btn btn--style">Show Answer!</button>
+            <h2>&lt;ol&gt;</h2>
           </div>
           <div>
             <ul class="card__categories">
@@ -265,37 +526,40 @@
           </div>
         </div>
         <div class="card margin border">
-          <svg
-            class="bookmark hide"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-bookmark-check-icon lucide-bookmark-check"
-          >
-            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z" />
-            <path d="m9 10 2 2 4-4" />
-          </svg>
-          <svg
-            class="bookmark"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-bookmark-icon lucide-bookmark"
-          >
-            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
-          </svg>
+          <button class="icon-button bookmark">
+            <svg
+              class="bookmark icon-button"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-bookmark-icon lucide-bookmark"
+            >
+              <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+            </svg>
+          </button>
+          <button class="icon-button bookmark hide">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-bookmark-check-icon lucide-bookmark-check"
+            >
+              <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z" />
+              <path d="m9 10 2 2 4-4" />
+            </svg>
+          </button>
           <h2 class="card__question">Question Placeholder</h2>
           <div class="card__answer border">
             <button class="card__answer_btn btn--style">Show Answer!</button>
@@ -319,56 +583,72 @@
       </main>
 
       <footer class="border">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-house-icon lucide-house"
+        <a
+          href="index.html"
+          class="icon-button mark"
+          aria-label="link to home page"
         >
-          <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
-          <path
-            d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
-          />
-        </svg>
-
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-bookmark-check-icon lucide-bookmark-check"
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-house-icon lucide-house"
+          >
+            <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+            <path
+              d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+            />
+          </svg>
+        </a>
+        <a
+          href="bookmarks.html"
+          class="icon-button"
+          aria-label="link to bookmarks page"
         >
-          <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z" />
-          <path d="m9 10 2 2 4-4" />
-        </svg>
-
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-circle-user-round-icon lucide-circle-user-round"
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-bookmark-check-icon lucide-bookmark-check"
+          >
+            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2Z" />
+            <path d="m9 10 2 2 4-4" />
+          </svg>
+        </a>
+        <a
+          href="profile.html"
+          class="icon-button"
+          aria-label="link to profile page"
         >
-          <path d="M18 20a6 6 0 0 0-12 0" />
-          <circle cx="12" cy="10" r="4" />
-          <circle cx="12" cy="12" r="10" />
-        </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-circle-user-round-icon lucide-circle-user-round"
+          >
+            <path d="M18 20a6 6 0 0 0-12 0" />
+            <circle cx="12" cy="10" r="4" />
+            <circle cx="12" cy="12" r="10" />
+          </svg>
+        </a>
       </footer>
     </div>
   </body>
