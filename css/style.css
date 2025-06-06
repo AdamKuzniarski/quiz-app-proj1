@@ -1,3 +1,7 @@
+@import url(/css/header.css);
+@import url(/css/main.css);
+@import url(/css/footer.css);
+
 *,
 *::before,
 *::after {
@@ -27,45 +31,16 @@ body {
   background: var(--text);
   font-family: "Noto Sans", sans-serif;
   text-align: center;
-  width: 600px;
-  height: 300px;
 }
 
 ul {
   list-style: none;
 }
 
-.title {
-  padding: var(--padding);
+.container {
+  max-width: 650px;
+  margin-inline: auto;
   background: var(--background);
-}
-
-.card {
-  background: var(--background);
-  padding: var(--padding);
-}
-
-.card__categories {
-  display: flex;
-  justify-content: center;
-}
-
-.card__categories__btn{
-
-}
-
-footer {
-  height: 100px;
-  width: 600px;
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--background);
-  display: flex;
-  gap: 35px;
-  justify-content: center;
-  align-items: center;
 }
 
 /* utility classes */
@@ -77,4 +52,22 @@ footer {
 }
 .border {
   border: 2px solid black;
+}
+
+.btn--style {
+  font-style: inherit;
+  color: var(--secondary);
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+
+.mark {
+  background: var(--text);
+  color: var(--secondary);
+  padding: 5px 25px;
+  font-size: 1.2rem;
+}
+
+.hide {
+  display: none;
 }
